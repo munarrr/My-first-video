@@ -11,15 +11,23 @@ const Header = () => {
                </div>
                <div className="header__navbar">
                     <ul className="header__item">
-                         <li className="header__list"><a classsName="header__link" href="#" >Home</a></li>
-                         <li className="header__list"><a classsName="header__link" href="#" >Home</a></li>
-                         <li className="header__list"><a classsName="header__link" href="#" >Home</a></li>
-                         <li className="header__list"><a classsName="header__link" href="#" >Home</a></li>
+                         <li className="header__list">
+                              <a  href="https://github.com/munarrr" className="header__link" >Home</a>
+                         </li>
+                         <li className="header__list">
+                              <a  href="https://github.com/munarrr" className="header__link" >Home</a>
+                         </li>
+                         <li className="header__list">
+                              <a  href="https://github.com/munarrr" className="header__link" >Home</a>
+                         </li>
+                         <li className="header__list">
+                              <a  href="https://github.com/munarrr" className="header__link" >Home</a>
+                         </li>
                     </ul>
                </div>
                <div className="header__search">
-                    <input class="header__input" type="text" placeholder="Search"></input>
-                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input className="header__input" type="text" placeholder="Search"></input>
+                    <i className="header__fa fa fa-search" aria-hidden="true"></i>
                </div>
           </div>
      )
