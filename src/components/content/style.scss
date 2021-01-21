@@ -1,5 +1,10 @@
+@import '~video-react/styles/scss/video-react';
+body{
+     background-color: black;
+}
 .content{
      width: 600px;
+     padding: 25px;
      &__img{
           height: 100vh;
           position: absolute;
@@ -7,10 +12,10 @@
           top: 50%;
           transform: translate( 50% , -50%);
           width: 100%;
-          height: 100%;
           z-index: -1;
           display: flex;
           justify-content: center;
+          background-repeat: no-repeat;
           align-items: center;
           background-size: cover;
      }
@@ -19,6 +24,8 @@
           background-size: cover;
      }
      &__year{
+          text-align: center;
+          padding: 0 7px;
           margin:0 auto;
           text-align: center;
           color: #fff;
@@ -28,4 +35,60 @@
      &__text{
           color: #fff;
      }
+     &__info{
+         display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+     }
+     &__btn{
+          margin-top: 30px;
+          display: flex;
+     }
+         
+     &__play{
+          padding: 10px;
+          background-color: red;
+          display: flex;
+          justify-content: center;
+          color: black;
+          outline: none;
+          border-radius: 8px;
+          font-size: 16px;
+          font-weight: 700;
+          border: none;
+          margin-right: 7px;
+          margin-right: 20px;
+         
+     }
+     &__fa{
+          margin-right: 7px;
+     }
+     &__playlist{
+          padding: 9px;
+          background-color: rgb(100, 49, 49);
+          color: black;
+          outline: none;
+          border-radius: 8px;
+          font-size: 16px;
+          font-weight: 700;
+          border: none;
+     }
+     &__kino{
+          margin-top: 50px;
+     }
+     &__treiler{
+          
+          text-decoration: none;
+          color: #fff;
+          font-size: 24px;
+     }
+
+}
+.video{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50% , -50%);
+     width: 100%;
 }
