@@ -6,7 +6,7 @@ import "./style.scss";
 
 const Content = () => {
  const videoSrc = video;
- const poster = bg;
+ const poster = "https://cdn.onebauer.media/one/media/5f51/0008/2f69/7b81/aa8b/2ee8/mulan-2020-rev.jpg?quality=50&width=1300&ratio=16-9&resizeStyle=aspectfill&format=jpg";
   
   return (
     <div className="content">
@@ -48,10 +48,12 @@ const Content = () => {
       </a>
       </div>
       <div  className="video" >
-      console.log(onClick)
-      <Player>
-      <source src={video} href="#" />
-    </Player>
+      <VideoPlayer
+       src={videoSrc}
+       poster={poster}
+       width="1200"
+       heidth="1200"
+    />
     </div>
     </div>
   );
